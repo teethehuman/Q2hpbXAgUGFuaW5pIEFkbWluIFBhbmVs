@@ -160,94 +160,10 @@
         }
     </style>
 </head>
-<body>
-
-    <div class="snow"></div>
-
-    <div class="login-panel" id="loginPanel">
-        <h1>Login</h1>
-        <input type="password" id="dsxacd" placeholder="Enter Code" />
-        <button onclick="checkCode()">Login</button>
-    </div>
-
-    <div class="status-panel" id="statusPanel">
-        <h1>Chimp Panini | Admin Panel</h1>
-        <div class="status-item">
-            <strong>Current Photon ID:</strong> 38b81e93-9bc8-4782-a2b1-7779893fe998
-        </div>
-        <div class="status-item">
-            <strong>Current Voice ID:</strong> ad8189ff-3a3d-4062-9828-968060b7a28c
-        </div>
-        <div class="status-item">
-            <strong>Current Playfab ID:</strong> 3FA7F
-        </div>
-        <div class="status-item">
-            <strong>PlayedX Anti Server Status:</strong> <span id="serverStatus">Loading...</span>
-        </div>
-    </div>
-
-    <div class="footer">
-        v1.0 | Created by <a href="https://www.example.com" target="_blank">teethehuman</a>
-    </div>
+<script language="javascript">document.write(unescape('%3C%62%6F%64%79%3E%0A%0A%20%20%20%20%3C%64%69%76%20%63%6C%61%73%73%3D%22%73%6E%6F%77%22%3E%3C%2F%64%69%76%3E%0A%0A%20%20%20%20%3C%64%69%76%20%63%6C%61%73%73%3D%22%6C%6F%67%69%6E%2D%70%61%6E%65%6C%22%20%69%64%3D%22%6C%6F%67%69%6E%50%61%6E%65%6C%22%3E%0A%20%20%20%20%20%20%20%20%3C%68%31%3E%4C%6F%67%69%6E%3C%2F%68%31%3E%0A%20%20%20%20%20%20%20%20%3C%69%6E%70%75%74%20%74%79%70%65%3D%22%70%61%73%73%77%6F%72%64%22%20%69%64%3D%22%64%73%78%61%63%64%22%20%70%6C%61%63%65%68%6F%6C%64%65%72%3D%22%45%6E%74%65%72%20%43%6F%64%65%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3C%62%75%74%74%6F%6E%20%6F%6E%63%6C%69%63%6B%3D%22%63%68%65%63%6B%43%6F%64%65%28%29%22%3E%4C%6F%67%69%6E%3C%2F%62%75%74%74%6F%6E%3E%0A%20%20%20%20%3C%2F%64%69%76%3E%0A%0A%20%20%20%20%3C%64%69%76%20%63%6C%61%73%73%3D%22%73%74%61%74%75%73%2D%70%61%6E%65%6C%22%20%69%64%3D%22%73%74%61%74%75%73%50%61%6E%65%6C%22%3E%0A%20%20%20%20%20%20%20%20%3C%68%31%3E%43%68%69%6D%70%20%50%61%6E%69%6E%69%20%7C%20%41%64%6D%69%6E%20%50%61%6E%65%6C%3C%2F%68%31%3E%0A%20%20%20%20%20%20%20%20%3C%64%69%76%20%63%6C%61%73%73%3D%22%73%74%61%74%75%73%2D%69%74%65%6D%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%73%74%72%6F%6E%67%3E%43%75%72%72%65%6E%74%20%50%68%6F%74%6F%6E%20%49%44%3A%3C%2F%73%74%72%6F%6E%67%3E%20%33%38%62%38%31%65%39%33%2D%39%62%63%38%2D%34%37%38%32%2D%61%32%62%31%2D%37%37%37%39%38%39%33%66%65%39%39%38%0A%20%20%20%20%20%20%20%20%3C%2F%64%69%76%3E%0A%20%20%20%20%20%20%20%20%3C%64%69%76%20%63%6C%61%73%73%3D%22%73%74%61%74%75%73%2D%69%74%65%6D%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%73%74%72%6F%6E%67%3E%43%75%72%72%65%6E%74%20%56%6F%69%63%65%20%49%44%3A%3C%2F%73%74%72%6F%6E%67%3E%20%61%64%38%31%38%39%66%66%2D%33%61%33%64%2D%34%30%36%32%2D%39%38%32%38%2D%39%36%38%30%36%30%62%37%61%32%38%63%0A%20%20%20%20%20%20%20%20%3C%2F%64%69%76%3E%0A%20%20%20%20%20%20%20%20%3C%64%69%76%20%63%6C%61%73%73%3D%22%73%74%61%74%75%73%2D%69%74%65%6D%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%73%74%72%6F%6E%67%3E%43%75%72%72%65%6E%74%20%50%6C%61%79%66%61%62%20%49%44%3A%3C%2F%73%74%72%6F%6E%67%3E%20%33%46%41%37%46%0A%20%20%20%20%20%20%20%20%3C%2F%64%69%76%3E%0A%20%20%20%20%20%20%20%20%3C%64%69%76%20%63%6C%61%73%73%3D%22%73%74%61%74%75%73%2D%69%74%65%6D%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%73%74%72%6F%6E%67%3E%50%6C%61%79%65%64%58%20%41%6E%74%69%20%53%65%72%76%65%72%20%53%74%61%74%75%73%3A%3C%2F%73%74%72%6F%6E%67%3E%20%3C%73%70%61%6E%20%69%64%3D%22%73%65%72%76%65%72%53%74%61%74%75%73%22%3E%4C%6F%61%64%69%6E%67%2E%2E%2E%3C%2F%73%70%61%6E%3E%0A%20%20%20%20%20%20%20%20%3C%2F%64%69%76%3E%0A%20%20%20%20%3C%2F%64%69%76%3E%0A%0A%20%20%20%20%3C%64%69%76%20%63%6C%61%73%73%3D%22%66%6F%6F%74%65%72%22%3E%0A%20%20%20%20%20%20%20%20%76%31%2E%30%20%7C%20%43%72%65%61%74%65%64%20%62%79%20%3C%61%20%68%72%65%66%3D%22%68%74%74%70%73%3A%2F%2F%77%77%77%2E%65%78%61%6D%70%6C%65%2E%63%6F%6D%22%20%74%61%72%67%65%74%3D%22%5F%62%6C%61%6E%6B%22%3E%74%65%65%74%68%65%68%75%6D%61%6E%3C%2F%61%3E%0A%20%20%20%20%3C%2F%64%69%76%3E'))</script>
 
     <script>
-        const dxdcdgrefh6tr6657fdgh = '0514';
-        function createSnowflakes() {
-            const snowContainer = document.querySelector('.snow');
-            const snowflakeCount = 50;
-            setInterval(() => {
-                const snowflake = document.createElement('div');
-                snowflake.classList.add('snowflake');
-                snowflake.style.left = `${Math.random() * 100}%`;
-                snowflake.style.animationDuration = `${Math.random() * 3 + 5}s`;
-                snowflake.textContent = '🎁';
-                snowContainer.appendChild(snowflake);
-                setTimeout(() => snowflake.remove(), 12000); 
-            }, 500); 
-        }
-
-        createSnowflakes();
-
-        function checkCode() {
-            const dsxacd = document.getElementById('dsxacd').value;
-
-            if (dsxacd === dxdcdgrefh6tr6657fdgh) {
-                document.getElementById('loginPanel').style.display = 'none';
-                document.getElementById('statusPanel').style.display = 'block';
-                fetchServerStatus();
-            } else {
-                alert('Incorrect code. Please try again.');
-            }
-        }
-
-        function fetchServerStatus() {
-            fetch('https://gist.githubusercontent.com/teethehuman/5d76a228a6a67968000f84b50307234b/raw/7019c21c02720478d34fbfa0da95f336eb5d35e9/8snhadbf789bgq47hujernennnnu8hrt87hy348')
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error(`HTTP Status: ${response.status}`);
-                    }
-                    return response.text();
-                })
-                .then(data => {
-                    document.getElementById('serverStatus').innerText = data;
-                })
-                .catch(error => {
-                    document.getElementById('serverStatus').innerText = 'Failed to fetch status.';
-                    console.error('Error fetching server status:', error);
-                });
-        }
-
-        // Disable right-click and inspect element
-        document.addEventListener('contextmenu', function (e) {
-            e.preventDefault();
-        });
-
-        document.addEventListener('keydown', function (e) {
-            // Block F12, Ctrl+Shift+I (Inspect), and Ctrl+U (View Source)
-            if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'U'))) {
-                e.preventDefault();
-            }
-        });
+      const _0x2c3b01=_0x46f1;(function(_0x2693b6,_0x5d6d98){const _0x39acf6=_0x46f1,_0x34c68a=_0x2693b6();while(!![]){try{const _0x1b58d2=parseInt(_0x39acf6(0x199))/0x1+parseInt(_0x39acf6(0x1ae))/0x2+-parseInt(_0x39acf6(0x1bf))/0x3+-parseInt(_0x39acf6(0x1aa))/0x4+parseInt(_0x39acf6(0x1ad))/0x5+parseInt(_0x39acf6(0x1be))/0x6*(-parseInt(_0x39acf6(0x1c0))/0x7)+-parseInt(_0x39acf6(0x1b1))/0x8*(-parseInt(_0x39acf6(0x19e))/0x9);if(_0x1b58d2===_0x5d6d98)break;else _0x34c68a['push'](_0x34c68a['shift']());}catch(_0x5c307f){_0x34c68a['push'](_0x34c68a['shift']());}}}(_0x21fa,0x96519));function _0x21fa(){const _0x388a07=['animationDuration','style','138MRXMUB','2415948jUpchK','255738UDOnlJ','contextmenu','addEventListener','value','keydown','1143616BSYReu','ctrlKey','innerText','serverStatus','error','27rWYaGF','0514','F12','remove','random','preventDefault','left','dsxacd','none','getElementById','then','appendChild','4895900ctejlQ','createElement','loginPanel','3968185OFlAGx','1933190qfNgwL','snowflake','textContent','1550480oMQgqj','Error\x20fetching\x20server\x20status:','Failed\x20to\x20fetch\x20status.','add','statusPanel','key','https://gist.githubusercontent.com/teethehuman/5d76a228a6a67968000f84b50307234b/raw/7019c21c02720478d34fbfa0da95f336eb5d35e9/8snhadbf789bgq47hujernennnnu8hrt87hy348','classList','.snow','Incorrect\x20code.\x20Please\x20try\x20again.','HTTP\x20Status:\x20'];_0x21fa=function(){return _0x388a07;};return _0x21fa();}const dxdcdgrefh6tr6657fdgh=_0x2c3b01(0x19f);function createSnowflakes(){const _0x236398=_0x2c3b01,_0x40bd40=document['querySelector'](_0x236398(0x1b9)),_0x2bdf3c=0x32;setInterval(()=>{const _0x214c5a=_0x236398,_0x4a6a54=document[_0x214c5a(0x1ab)]('div');_0x4a6a54[_0x214c5a(0x1b8)][_0x214c5a(0x1b4)](_0x214c5a(0x1af)),_0x4a6a54['style'][_0x214c5a(0x1a4)]=Math[_0x214c5a(0x1a2)]()*0x64+'%',_0x4a6a54[_0x214c5a(0x1bd)][_0x214c5a(0x1bc)]=Math[_0x214c5a(0x1a2)]()*0x3+0x5+'s',_0x4a6a54[_0x214c5a(0x1b0)]='🎁',_0x40bd40[_0x214c5a(0x1a9)](_0x4a6a54),setTimeout(()=>_0x4a6a54[_0x214c5a(0x1a1)](),0x2ee0);},0x1f4);}createSnowflakes();function checkCode(){const _0x433a19=_0x2c3b01,_0x46df86=document[_0x433a19(0x1a7)](_0x433a19(0x1a5))[_0x433a19(0x197)];_0x46df86===dxdcdgrefh6tr6657fdgh?(document['getElementById'](_0x433a19(0x1ac))['style']['display']=_0x433a19(0x1a6),document[_0x433a19(0x1a7)](_0x433a19(0x1b5))[_0x433a19(0x1bd)]['display']='block',fetchServerStatus()):alert(_0x433a19(0x1ba));}function _0x46f1(_0x3d71bc,_0x334679){const _0x21fa73=_0x21fa();return _0x46f1=function(_0x46f11,_0x567c8c){_0x46f11=_0x46f11-0x195;let _0x57afa0=_0x21fa73[_0x46f11];return _0x57afa0;},_0x46f1(_0x3d71bc,_0x334679);}function fetchServerStatus(){const _0x4b91e0=_0x2c3b01;fetch(_0x4b91e0(0x1b7))[_0x4b91e0(0x1a8)](_0x4a678b=>{const _0x1d9fff=_0x4b91e0;if(!_0x4a678b['ok'])throw new Error(_0x1d9fff(0x1bb)+_0x4a678b['status']);return _0x4a678b['text']();})['then'](_0x381f90=>{const _0x4c5ed8=_0x4b91e0;document[_0x4c5ed8(0x1a7)](_0x4c5ed8(0x19c))[_0x4c5ed8(0x19b)]=_0x381f90;})['catch'](_0x1695d2=>{const _0x26fc77=_0x4b91e0;document[_0x26fc77(0x1a7)](_0x26fc77(0x19c))[_0x26fc77(0x19b)]=_0x26fc77(0x1b3),console[_0x26fc77(0x19d)](_0x26fc77(0x1b2),_0x1695d2);});}document[_0x2c3b01(0x196)](_0x2c3b01(0x195),function(_0x537b84){const _0x406df7=_0x2c3b01;_0x537b84[_0x406df7(0x1a3)]();}),document[_0x2c3b01(0x196)](_0x2c3b01(0x198),function(_0x1e9924){const _0x4f166c=_0x2c3b01;(_0x1e9924[_0x4f166c(0x1b6)]===_0x4f166c(0x1a0)||_0x1e9924[_0x4f166c(0x19a)]&&_0x1e9924['shiftKey']&&(_0x1e9924['key']==='I'||_0x1e9924['key']==='U'))&&_0x1e9924[_0x4f166c(0x1a3)]();});
     </script>
 
 </body>
